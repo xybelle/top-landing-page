@@ -7,22 +7,34 @@ body {
     margin: 0;
 }
 
+.footer,
 .content-1 {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
 }
 
+.content-1 {
+    padding-bottom: 50px;
+}
+
+.content-2,
+.content-3,
+.content-4 {
+    padding: 50px 0 50px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
+    padding: 0px 100px;
 }
 
 li,
 .logo,
-.hero-left {
+.hero-left,
+.footer {
     color: aliceblue;
 }
 
@@ -63,9 +75,9 @@ button {
     color: black;
     font-weight: 600;
     border: none;
-    margin: 10px;
+    /* margin: 10px; */
     padding: 10px 24px;
-    border-radius: 12px;
+    border-radius: 8px;
     transition-duration: 0.3s;
 }
 
@@ -78,12 +90,93 @@ button:hover {
     align-content: center;
 }
 
-img {
-    width: 500px;
-    height: 200px;
-    background: wheat;
+.footer {
+    padding: 20px;
+    text-align: center;
 }
 
-.footer > p {
+.content-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-2 > h1 {
+    align-self: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #4e82ca;
+    border-radius: 12px;
+}
+
+.subtext {
+    width: 150px;
+    padding: 2px;
+    text-align: center;
+}
+
+.content-3 {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote {
+    max-width: 800px;
+    height: auto;
+}
+
+.quote > .quotation {
+    font-size: 36px;
+    font-weight: 280;
+    font-style: italic;
+}
+
+.quote > .name {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.content-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    min-width: 800px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: #3882f6;
+    padding: 30px 50px;
+    border-radius: 8px;
+}
+
+.container > button {
+    flex-grow: 0;
+}
+
+.call-to-action > p {
+    color: aliceblue;
+    margin: 2px;
+}
+
+.call-to-action > .bold {
+    font-weight: 700;
+}
+
+.footer:after {
+    content:"Copyright \00a9 xy 2024";
     text-align: center;
 }
